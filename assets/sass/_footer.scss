@@ -1,0 +1,31 @@
+.footer{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background: black;
+}
+
+.child{
+    padding: 3%;
+    color: cornsilk;
+}
+
+.child h1{
+    font-size: 100%;
+}
+
+.child ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.child ul li{
+    padding-top: 10px;
+}
+
+.child ul li a{
+    text-decoration: none;
+    color: darkgray;
+}
