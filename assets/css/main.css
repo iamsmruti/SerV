@@ -166,7 +166,7 @@
 }
 .contact .formContainer .form input[type=submit] {
   width: 100px;
-  background-color: #4CAF50;
+  background-color: #b00020;
   color: white;
   padding: 14px 20px;
   margin: 14px 0;
@@ -175,7 +175,7 @@
   cursor: pointer;
 }
 .contact .formContainer .form input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #cf6679;
 }
 .contact .formContainer .form div {
   border-radius: 5px;
