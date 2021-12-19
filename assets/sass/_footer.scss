@@ -29,3 +29,22 @@
     text-decoration: none;
     color: darkgray;
 }
+
+.c4 div{
+    padding-top: 1rem;
+}
+
+.c4 a{
+    border-radius: 100%;
+}
+
+.c4 img{
+    margin-right: 0.5rem;
+    width: 50px;
+    transition: all 0.1s ease-in;
+}
+
+.c4 img:hover{
+    transition: all 0.1s ease-in;
+    transform: rotate(20deg);
+}

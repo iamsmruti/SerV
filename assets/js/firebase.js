@@ -43,5 +43,9 @@ function submitForm(e){
     alert("We will contact you soon ! ...")
 }
 
-const app = initializeApp(firebaseConfig);
+db.get().then(snap => {
+    size = snap.size // will return the collection size
+    console.log(size);
+    document.querySelector('.req').innerHTML = eval(size*100)
+})
 const analytics = getAnalytics(app);

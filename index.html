@@ -8,17 +8,21 @@
     <title>Serv - Services for you</title>
 
     <!--FavIcon Link-->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
+    <div class="lds-roller centerr"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     <!--  The Header Section -->
     <header class="">
         <div class="logo center">
-            <img src="assets/img/sideLogo.png" alt="">
+            <img src="assets/img/logo/sideLogo.png" alt="">
         </div>
         <nav>
             <ul class="center">
@@ -44,13 +48,12 @@
     <div id="hero"></div>
     <div class="hero center">
         <div class="con1 center">
-            <div class="anim">
+            <div data-aos="fade-right" class="anim">
                 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_a6uqtudf.json"  speed="1" loop  autoplay></lottie-player>
             </div>
-
-            <div class="landText centerY">
+            <div data-aos="fade-left" class="landText centerY">
                 <h3 class="font1">What we Offer !</h3>
-                <p>We offer Services</p>
+                <p>You Ask, We Provide.</p>
                 <a href="#services" class="explore center">EXPLORE</a>
             </div>
         </div>
@@ -62,9 +65,9 @@
     <div class="services centerY">
         <h3 class="heading font1">SERVICES</h3>
         <div class="con2 center">
-            <img src="assets/img/tour.png" alt="">
-            <img src="assets/img/decor.png" alt="">
-            <img src="assets/img/electrician.png" alt="">
+            <img data-aos="fade-up" src="assets/img/services/tour.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="50" src="assets/img/services/decor.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="100" src="assets/img/services/electrician.png" alt="">
         </div>
         <h3 class="heading2 font1">Contact for More Info</h3>
     </div>
@@ -75,16 +78,24 @@
     <div class="about centerY">
         <h3 class="mainHeading font1">ABOUT</h3>
         <div class="con3 center">
-            <div class="info centerY">
+            <div data-aos="fade-right" class="info centerY">
                 <div class="logoL center">
-                    <img src="assets/img/favicon.png" alt="">
+                    <img src="assets/img/logo/favicon.png" alt="">
                 </div>
                 <p class="p1">Meet your needs through a simple phone call. <br> SERV is here to make it possible.</p>
                 <p>Welcome to the smart era through SERV, the service provider of your various necessities like need of an electrician, travel planner or party decor, or other small-yet-needy issues. We shortlist your probe for search and hand you over with the most ideal solution.</p>
             </div>
-            <div class="stats">
+            <div data-aos="fade-left" class="stats centerY">
                 <h2 class="font1">Stats</h2>
-                <h4>Services Used :</h4>
+                <h4>Available cities :</h4>
+                <div class="used">
+                    <ul>
+                        <li>Sambalpur</li>
+                        <li>Rourkela</li>
+                        <li>Bhubaneswar</li>
+                    </ul>
+                </div>
+                <h4>Total services used :</h4>
                 <div class="used">
                     <ul>
                         <li>Tour & Guides : <span>59 times</span></li>
@@ -92,7 +103,7 @@
                         <li>Decor Service : <span>10 times</span></li>
                     </ul>
                 </div>
-                <p>200+ Happy Customers</p>
+                <p><span class="req"></span>+ Happy Customers</p>
             </div>
         </div>
     </div>
@@ -103,7 +114,7 @@
     <div class="contact centerY">
         <h3 class="mainHeading font1">LETS TALK</h3>
         <div class="formContainer">
-            <div class="form center" >
+            <div data-aos="fade-right" class="form center" >
                 <form action="" id="myForm">
                   <label for="name">Full Name</label>
                   <input required type="text" id="name" name="firstname" placeholder="Your full name..">
@@ -123,8 +134,8 @@
                 
                   <input id="submit" type="submit" value="Submit">
                 </form>
-              </div>
-            <div id="map" class="map">
+            </div>
+            <div data-aos="fade-left" id="map" class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37460.814469048266!2d83.86688874370337!3d21.494610568327968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213c51e5371e0b%3A0xe97af1169ae33788!2sBurla%2C%20Odisha!5e0!3m2!1sen!2sin!4v1639829661218!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -136,10 +147,9 @@
         <div class="child c1">
             <h1>What we Serve ?</h1>
             <ul>
-                <li><a href="">Make WebSite for Bussiness Ideas</a></li>
-                <li><a href="">Make Apps for Bussiness Ideas</a></li>
-                <li><a href="">Give Tech Advice </a></li>
-                <li><a href="">Help Small Starters</a></li>
+                <li><a href="">Tour Guides</a></li>
+                <li><a href="">Electrician</a></li>
+                <li><a href="">Decorations</a></li>
             </ul>
         </div>
 
@@ -164,11 +174,11 @@
 
         <div class="child c4">
             <h1>How to Reach Us ?</h1>
-            <ul>
-                <li><a href="">Facebook Page</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Youtube</a></li>
-            </ul>
+            <div class="center">
+                <a href=""><img src="assets/img/social/insta.png" alt=""></a>
+                <a href=""><img src="assets/img/social/fb.png" alt=""></a>
+                <a href=""><img src="assets/img/social/twitter.png" alt=""></a>
+            </div>
         </div>
 
     </div>
@@ -184,5 +194,13 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3Kdxfnr2qE7gwL-TzEi0MCk2TQm8ZuJ0&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+  </script>
 </body>
 </html>

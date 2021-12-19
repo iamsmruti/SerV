@@ -23,7 +23,7 @@ header{
 
         a{
             text-decoration: none;
-            color: white;
+            color: rgb(228, 228, 228);
         }
 
         .contactbtn{
@@ -40,13 +40,13 @@ header{
 
 .ham{
     display: none;
-    color: white;
+    color: rgb(228, 228, 228);
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 .i{
-    color: white;
+    color: rgb(228, 228, 228);
 }
 
 .navMob{
@@ -68,6 +68,10 @@ header{
 
             a{
                 text-decoration: none;
+            }
+
+            a:hover{
+                color: #b00020;
             }
         }
     }
