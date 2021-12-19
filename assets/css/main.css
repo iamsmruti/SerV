@@ -271,6 +271,7 @@ header ul li .contactbtn:hover {
 }
 
 .child {
+  margin: 1rem 0;
   padding: 3%;
   color: cornsilk;
 }
@@ -424,6 +425,23 @@ header ul li .contactbtn:hover {
   margin: auto;
 }
 
+.signature p {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 70%;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(255, 0, 0, 0.445);
+}
+.signature .sigInsta {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.774);
+}
+.signature .sigInsta img {
+  width: 18px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -432,7 +450,6 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
-  border: 1px solid wheat;
   color: #e4e4e4;
   transition: all 0.1s ease-in;
 }
@@ -526,6 +543,9 @@ body {
 
   .footer {
     margin-top: 300px;
+  }
+  .footer .child {
+    width: 100%;
   }
 }
 
