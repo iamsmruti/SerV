@@ -46,6 +46,6 @@ function submitForm(e){
 db.get().then(snap => {
     size = snap.size // will return the collection size
     console.log(size);
-    document.querySelector('.req').innerHTML = eval(size*100)
+    document.querySelector('.req').innerHTML = eval(size*10)
 })
 const analytics = getAnalytics(app);
