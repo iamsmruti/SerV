@@ -31,8 +31,7 @@ function submitForm(e){
         name: name,
         number: number,
         service: service,
-        message: message,
-        status: pending
+        message: message
     }).then( ()=>{
         console.log("data saved")
     }).catch((error) => {
