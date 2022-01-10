@@ -7,7 +7,7 @@ const firebaseConfig = {
     messagingSenderId: "928023101421",
     appId: "1:928023101421:web:650c254d34c33e672b31e4",
     measurementId: "G-467QV90Q0H"
-  };
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
@@ -31,7 +31,8 @@ function submitForm(e){
         name: name,
         number: number,
         service: service,
-        message: message
+        message: message,
+        status: pending
     }).then( ()=>{
         console.log("data saved")
     }).catch((error) => {
